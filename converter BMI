@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+
+int main(void)
+{
+    using namespace std;
+    const int foot_per_inch = 12;
+    const float lbs_per_kg = 2.2;
+    const float foot_per_metr = 3.3;
+    const float inch_per_metr = 39.4; 
+    int foot;
+    double inch;
+    int lbs;
+    cout << "Enter your high in foot and inch" << endl;
+    cin >> foot;
+    cin >> inch;
+    cout << "Enter your weight in pounds " << endl;
+    cin >> lbs;
+    float index = inch + foot * foot_per_inch;
+    float metr = index / inch_per_metr;
+    float kg = lbs / lbs_per_kg;
+    float x = pow(metr,2);
+    cout << "Your BMI ="<< kg / x << endl;
+    return 0;
+    
+    
+}
